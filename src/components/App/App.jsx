@@ -5,16 +5,14 @@ import "./App.css";
 import SearchBar from "../SearchBar/SearchBar";
 import SearchResults from "../SearchResults/SearchResults";
 
-const search1 = {
-  name:"ddd",
-  artist:"ddd",
-  album:"df"
-
-}
-
-
 const App = () => {
-  
+  // const [Search, setSearch] = useState(
+      
+  //         {name: 'name1',artist:'artist1',album:'album1',id:' id'},
+  //         {name: 'name1',artist:'artist1',album:'album1',id:' id'},
+  //         {name: 'name1',artist:'artist1',album:'album1',id:' id'}]
+  //       );
+  // }
   return (
     <div>
       <h1>
@@ -23,9 +21,11 @@ const App = () => {
       <div className="App">
         <SearchBar />
         <div className="App-playlist">
-            <SearchResults search={search1}/>
+            <SearchResults />
+            {/*searchresult={this.state.searchResults}*/}
             { /* <SearchPlaylist /> */ }
         </div>
+        
       </div>
     </div>
   );
